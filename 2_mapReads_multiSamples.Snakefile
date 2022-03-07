@@ -1,8 +1,4 @@
-# import os
-# import snakemake.io
-# import glob
-
-#IDS, = glob_wildcards('{id}_1.fastq')
+# This snakemake file maps multiple samples and writes the sam file into a output directory 
 
 KP_SAMPLES = ["E306","E307"]
 
@@ -18,4 +14,6 @@ rule bowtie2_alignment:
     stats='bowtie2_output/{id}.stats',
   shell:
     '''bowtie2 -X 1000 -x KP_Ref -1 {input.R1} -2 {input.R2} -S {output.sam} --end-to-end --sensitive --threads 20 2> {output.stats}'''
+
+
 
