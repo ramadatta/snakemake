@@ -32,6 +32,7 @@ WoW
   - This is because these are not single read files but paired-end read files
 - [`NameError:`, `Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}` ](https://stackoverflow.com/questions/64364682/nameerror-when-ues-awk-in-snakemake)
 - [Unexpected keyword expand in rule definition ](https://stackoverflow.com/questions/50455772/snakemake-with-multiples-rule-all)
+- [If you define a directory, and not files, as output of a rule, it can indeed be confusing for snakemake.](https://stackoverflow.com/questions/69824618/snakemake-make-rule-wait-for-full-excecution-of-previous-rule)
 
 
 ### 4. To check before running script
